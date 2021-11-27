@@ -1,8 +1,10 @@
-let messageComponentsFood = ['goulash ', 'body milk ', 'grain '];
-let messageComponentsVerbs = ['eat ', 'love ', 'despise '];
-let messageComponentsSubst = ['i ', 'you ', 'we '];
 const outputMessage = () =>{
-    const message = messageComponentsSubst[Math.floor(Math.random()*messageComponentsSubst.length)] + messageComponentsVerbs[Math.floor(Math.random()*messageComponentsVerbs.length)] + messageComponentsFood[Math.floor(Math.random()*messageComponentsFood.length)];
+    const messages ={
+    food : ['goulash ', 'body milk ', 'grain '],
+    verbs : ['eat ', 'love ', 'despise '],
+    subst : ['i ', 'you ', 'we '],
+    }
+    const message = messages.subst[Math.floor(Math.random()*messages.subst.length)] + messages.verbs[Math.floor(Math.random()*messages.verbs.length)] + messages.food[Math.floor(Math.random()*messages.food.length)];
     console.log(message);
 };
 outputMessage();
