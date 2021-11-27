@@ -19,11 +19,10 @@
 - Node.js v14.17.4
 
 ## Features
-List the ready features here:
-- Awesome feature 1
+Generates a random sentence.
 
 ## Project Status
-Project is: _in progress_
+Project is: _completed_(for now)
 
 ## Acknowledgements
 - This project was based on [this tutorial](https://www.codecademy.com/learn/paths/back-end-engineer-career-path).
