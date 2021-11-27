@@ -4,7 +4,11 @@ const outputMessage = () =>{
     verbs : ['eat ', 'love ', 'despise '],
     subst : ['i ', 'you ', 'we '],
     }
-    const message = messages.subst[Math.floor(Math.random()*messages.subst.length)] + messages.verbs[Math.floor(Math.random()*messages.verbs.length)] + messages.food[Math.floor(Math.random()*messages.food.length)];
+    const randomFood = messages.food[Math.floor(Math.random()*messages.food.length)];
+    const randomSubst = messages.subst[Math.floor(Math.random()*messages.subst.length)];
+    const randomVerb =  + messages.verbs[Math.floor(Math.random()*messages.verbs.length)];
+    const message = randomFood + randomSubst + randomVerb;
+
     console.log(message);
 };
 outputMessage();
